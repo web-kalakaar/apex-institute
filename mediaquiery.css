@@ -1,0 +1,308 @@
+/* ============================================
+   RESPONSIVE — TABLET (max 1024px)
+============================================ */
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 70px;
+  }
+
+  .nav-container {
+    padding: 0 25px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(320px, 85vw);
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.15);
+    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1000;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-menu a {
+    font-size: 1.1rem;
+  }
+
+  /* Hero */
+  .hero-container {
+    padding: 40px 30px;
+  }
+  .hero-content {
+    max-width: 80%;
+  }
+  .hero-icons {
+    right: 2%;
+    gap: 40px;
+  }
+
+  /* About */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-image {
+    order: -1;
+  }
+
+  /* Highlights */
+  .highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Faculty */
+  .faculty-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .faculty-card.director {
+    grid-column: span 2;
+    grid-template-columns: 1fr 1.5fr;
+  }
+
+  /* Achievers */
+  .achievers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact */
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .contact-map {
+    min-height: 350px;
+  }
+  .contact-map iframe {
+    min-height: 350px;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .footer-about {
+    grid-column: span 2;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE LARGE (max 768px)
+============================================ */
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 65px;
+  }
+
+  /* Hero */
+  .hero {
+    min-height: 100svh;
+  }
+  .hero-container {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-icons {
+    display: none;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Courses */
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Faculty */
+  .faculty-card.director {
+    grid-column: span 2;
+    grid-template-columns: 1fr;
+  }
+  .director .faculty-image {
+    height: 250px;
+  }
+  .director .faculty-info {
+    text-align: center;
+  }
+
+  /* Achievers */
+  .achievers-grid .achiever-card {
+    width: 45%;
+  }
+  .achievers-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* spacing between cards */
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    display: flex; /* 🔥 REQUIRED */
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .gallery-grid .gallery-item {
+    width: 45%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  .gallery-grid .gallery-item img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+  }
+
+  /* Contact */
+  .contact-info {
+    padding: 30px 25px;
+  }
+
+  /* Footer */
+  .footer-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-section ul a {
+    padding: 10px 20px;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  .footer-about {
+    grid-column: span 1;
+  }
+  
+
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE SMALL (max 480px)
+============================================ */
+@media (max-width: 480px) {
+  :root {
+    --nav-height: 60px;
+  }
+
+  section {
+    padding: 50px 18px;
+  }
+
+  /* About stats */
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .stat-card {
+    max-width: 100%;
+  }
+
+  /* Highlights */
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Faculty */
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+  .faculty-card.director {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+
+  /* Achievers */
+  .achievers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-item {
+    height: 220px;
+  }
+
+  /* Gallery tabs scroll */
+  .gallery-tabs {
+    gap: 8px;
+  }
+  .gallery-tab {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+
+  /* Contact */
+  .contact-content {
+    gap: 20px;
+  }
+
+  /* Scroll top */
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  /* Hero buttons */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ============================================
+   RESPONSIVE — VERY SMALL (max 360px)
+============================================ */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .nav-logo {
+    font-size: 1.6rem;
+  }
+}
