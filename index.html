@@ -9,8 +9,20 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquiery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/highlights.css">
+    <link rel="stylesheet" href="css/course.css">
+    <link rel="stylesheet" href="css/faculty.css">
+    <link rel="stylesheet" href="css/achievers.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mediaquiery.css">
+
 </head>
 
 <body>
@@ -69,11 +81,7 @@
                     <a href="#contact" class="btn btn-secondary">Join Now</a>
                 </div>
             </div>
-            <div class="hero-icons">
-                <i class="fas fa-graduation-cap hero-icon"></i>
-                <i class="fas fa-book-open hero-icon"></i>
-                <i class="fas fa-bullseye hero-icon"></i>
-            </div>
+
         </div>
     </section>
 
@@ -128,32 +136,26 @@
 
             <div class="highlights-grid">
                 <div class="highlight-card">
-                    <i class="fas fa-chalkboard-teacher highlight-icon"></i>
                     <h3>Expert Faculty</h3>
                     <p>Learn from experienced mentors with proven track records in competitive exam coaching</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-tasks highlight-icon"></i>
                     <h3>Daily Practice Sets</h3>
                     <p>Regular practice materials designed to sharpen your skills and boost confidence</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-file-alt highlight-icon"></i>
                     <h3>Weekly Mock Tests</h3>
                     <p>Comprehensive mock tests that simulate real exam environments</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-book highlight-icon"></i>
                     <h3>Updated Study Material</h3>
                     <p>Latest syllabus-aligned content with current affairs and exam patterns</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-question-circle highlight-icon"></i>
                     <h3>Doubt Support System</h3>
                     <p>Dedicated doubt-clearing sessions ensuring no question goes unanswered</p>
                 </div>
                 <div class="highlight-card">
-                    <i class="fas fa-rupee-sign highlight-icon"></i>
                     <h3>Affordable Fees</h3>
                     <p>Quality education at competitive prices with flexible payment options</p>
                 </div>
@@ -211,7 +213,7 @@
                                 <i class="fas fa-clock"></i>
                                 <span>8-12 Months</span>
                             </div>
-                            <button class="btn-enroll">Enroll Now</button>
+                            <button class="btn-enroll" onclick="scrollToContact()">Enroll Now</button>
                         </div>
                     </div>
                 </div>
@@ -234,7 +236,7 @@
                                 <i class="fas fa-clock"></i>
                                 <span>6-10 Months</span>
                             </div>
-                            <button class="btn-enroll">Enroll Now</button>
+                            <button class="btn-enroll" onclick="scrollToContact()">Enroll Now</button>
                         </div>
                     </div>
                 </div>
@@ -257,7 +259,7 @@
                                 <i class="fas fa-clock"></i>
                                 <span>6-9 Months</span>
                             </div>
-                            <button class="btn-enroll">Enroll Now</button>
+                            <button class="btn-enroll" onclick="scrollToContact()">Enroll Now</button>
                         </div>
                     </div>
                 </div>
@@ -280,7 +282,7 @@
                                 <i class="fas fa-clock"></i>
                                 <span>4-8 Months</span>
                             </div>
-                            <button class="btn-enroll">Enroll Now</button>
+                            <button class="btn-enroll" onclick="scrollToContact()">Enroll Now</button>
                         </div>
                     </div>
                 </div>
@@ -296,79 +298,10 @@
                 <p class="section-subtitle">Learn from the Best in the Industry</p>
             </div>
 
-            <div class="faculty-grid">
-                <!-- Director Card -->
-                <div class="faculty-card director">
-                    <div class="faculty-image">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Rajesh Sharma</h3>
-                        <div class="faculty-role">Director & Founder</div>
-                        <div class="faculty-exp">15+ Years of Excellence</div>
-                        <p class="faculty-bio">A visionary leader with over 15 years of experience in guiding students
-                            for SSC and Banking exams. Known for innovative teaching methods and exceptional success
-                            rates. His passion for education has transformed thousands of aspirants into successful
-                            government employees.</p>
-                    </div>
-                </div>
-
-                <!-- Faculty Members -->
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Priya Agarwal</h3>
-                        <div class="faculty-role">Mathematics Expert</div>
-                        <div class="faculty-exp">10+ Years Experience</div>
-                        <p class="faculty-bio">Specializes in quantitative aptitude with a unique approach to
-                            simplifying complex problems.</p>
-                    </div>
-                </div>
-
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Amit Kumar</h3>
-                        <div class="faculty-role">Reasoning Expert</div>
-                        <div class="faculty-exp">8+ Years Experience</div>
-                        <p class="faculty-bio">Expert in logical reasoning with proven shortcuts and techniques for
-                            quick problem solving.</p>
-                    </div>
-                </div>
-
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <i class="fas fa-language"></i>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Sneha Verma</h3>
-                        <div class="faculty-role">English Expert</div>
-                        <div class="faculty-exp">12+ Years Experience</div>
-                        <p class="faculty-bio">Masters in English with focus on grammar, vocabulary, and comprehension
-                            excellence.</p>
-                    </div>
-                </div>
-
-                <div class="faculty-card">
-                    <div class="faculty-image">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="faculty-info">
-                        <h3>Vikram Singh</h3>
-                        <div class="faculty-role">General Studies Expert</div>
-                        <div class="faculty-exp">9+ Years Experience</div>
-                        <p class="faculty-bio">Comprehensive knowledge of GK, current affairs, and competitive exam
-                            patterns.</p>
-                    </div>
-                </div>
+            <div class="faculty-grid" id="faculty-grid">
             </div>
         </div>
     </section>
-
     <!-- ACHIEVERS SECTION -->
     <section class="achievers" id="achievers">
         <div class="section-container">
@@ -380,7 +313,7 @@
             <div class="achievers-grid">
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">RANK 1</div>
                     </div>
                     <div class="achiever-info">
@@ -392,7 +325,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">SELECTED</div>
                     </div>
                     <div class="achiever-info">
@@ -404,7 +337,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">RANK 3</div>
                     </div>
                     <div class="achiever-info">
@@ -416,7 +349,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">SELECTED</div>
                     </div>
                     <div class="achiever-info">
@@ -428,7 +361,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">SELECTED</div>
                     </div>
                     <div class="achiever-info">
@@ -440,7 +373,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">SELECTED</div>
                     </div>
                     <div class="achiever-info">
@@ -452,7 +385,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">RANK 7</div>
                     </div>
                     <div class="achiever-info">
@@ -464,7 +397,7 @@
 
                 <div class="achiever-card">
                     <div class="achiever-image">
-                        <i class="fas fa-user-graduate"></i>
+                        <img src="logo.png" alt="">
                         <div class="achiever-badge">SELECTED</div>
                     </div>
                     <div class="achiever-info">
@@ -486,140 +419,125 @@
             </div>
 
             <div class="gallery-tabs">
-                <div class="gallery-tab active" data-category="all">All</div>
-                <div class="gallery-tab" data-category="classroom">Classroom</div>
+                <div class="gallery-tab active" data-category="classroom">Classroom</div>
                 <div class="gallery-tab" data-category="events">Events</div>
                 <div class="gallery-tab" data-category="results">Results</div>
             </div>
 
             <div class="gallery-grid">
-                <div class="gallery-item" data-category="classroom">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-chalkboard"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Interactive Classroom</span>
-                    </div>
-                </div>
 
-                <div class="gallery-item" data-category="events">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Success Celebration</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="classroom">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Group Study Session</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="results">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Result Declaration</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="events">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Seminar Event</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="classroom">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Computer Lab</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="results">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Certificate Distribution</span>
-                    </div>
-                </div>
-                <div class="gallery-item" data-category="events">
-                    <div class="gallery-placeholder">
-                        <i class="fas fa-birthday-cake"></i>
-                    </div>
-                    <div class="gallery-overlay">
-                        <span>Anniversary Celebration</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
-        <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
-        <div class="lightbox-content" id="lightbox-content"></div>
-    </div>
+
 
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">We're Here to Help You Succeed</p>
-            </div>
+        <div class="section-header">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">
+                Get in touch with our team for admissions, course details, fee structure, and career guidance.
+            </p>
+        </div>
 
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
 
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt contact-icon"></i>
-                        <div class="contact-details">
-                            <h4>Our Address</h4>
-                            <p>Near City Mall, Bharatpur Road<br>Bharatpur, Rajasthan - 321001</p>
-                        </div>
-                    </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <div class="contact-details">
+                        <h4>Our Address</h4>
+                        <h6>Branch-1</h6>
 
-                    <div class="contact-item">
-                        <i class="fas fa-phone contact-icon"></i>
-                        <div class="contact-details">
-                            <h4>Phone Number</h4>
-                            <p>+91 9876543210<br>+91 9876543211</p>
-                        </div>
-                    </div>
+                        <p>Near City Mall, Bharatpur RoadBharatpur, Rajasthan - 321001</p>
+                        <a href="">get directions</a>
+                        <h6>Branch-2</h6>
 
-                    <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <div class="contact-details">
-                            <h4>Email Address</h4>
-                            <p>apexcoaching@email.com<br>info@apexcoaching.com</p>
-                        </div>
-                    </div>
+                        <p>Near City Mall, Bharatpur RoadBharatpur, Rajasthan - 321001</p>
+                        <a href="">get directions</a>
 
-                    <div class="contact-item">
-                        <i class="fas fa-clock contact-icon"></i>
-                        <div class="contact-details">
-                            <h4>Working Hours</h4>
-                            <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 5:00 PM</p>
-                        </div>
                     </div>
                 </div>
 
-                <div class="contact-map">
-                    <div class="map-placeholder">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3003.093258227802!2d77.51851027469634!3d27.210665676470875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973a302ddbfff99%3A0x610cc04315cffed1!2sLaxmi%20Vilas%20Palace!5e1!3m2!1sen!2sin!4v1775125497240!5m2!1sen!2sin" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p>Interactive Map Location<br><small>Bharatpur, Rajasthan</small></p>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <div class="contact-details">
+                        <h4>Phone Number</h4>
+                        <p>+91 9876543210<br>+91 9876543211</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-details">
+                        <h4>Email Address</h4>
+                        <p>apexcoaching@email.com<br>info@apexcoaching.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-clock contact-icon"></i>
+                    <div class="contact-details">
+                        <h4>Working Hours</h4>
+                        <p>Monday - Saturday: 8:00 AM - 8:00 PM<br>Sunday: 9:00 AM - 5:00 PM</p>
                     </div>
                 </div>
             </div>
+
+            <div class="contact-form-card">
+
+                <div class="form-header">
+                    <span class="form-badge">Free Consultation</span>
+                    <h3>Book Your Free Demo Class</h3>
+                    <p>Fill out the form and our team will contact you within 24 hours.</p>
+                </div>
+
+                <form class="enquiry-form">
+
+                    <div class="input-group">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Student Name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-book"></i>
+                        <select required>
+                            <option value="">Select Course</option>
+                            <option>SSC CGL</option>
+                            <option>SSC CHSL</option>
+                            <option>Bank PO</option>
+                            <option>Bank Clerk</option>
+                            <option>Railway</option>
+                            <option>UPSC</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fas fa-comment"></i>
+                        <textarea rows="4" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <button type="submit" class="enquiry-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Book Free Demo
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
         </div>
     </section>
 
@@ -632,6 +550,9 @@
                     <p>Empowering aspirants to achieve their government job dreams through quality education, expert
                         guidance, and unwavering support.</p>
                     <div class="social-icons">
+                        <a href="https://wa.me/919876543210" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
                         <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
@@ -673,7 +594,8 @@
                 <p>Apex Coaching Institute</p>
                 <div class="creator-credit">
                     <i class="fas fa-code"></i> Website Designed & Developed with ❤️ by
-                    <span><a href="https://web-kalakaar.github.io/Myportfolio/" target="_blank">Sharad Kumar | webdeveloper</a></span>
+                    <span><a href="https://web-kalakaar.github.io/Myportfolio/" target="_blank"> Sharad Kumar |
+                            webdeveloper </a></span>
                 </div>
             </div>
         </div>
@@ -683,8 +605,16 @@
     <button class="scroll-top" id="scrollTop">
         <i class="fas fa-arrow-up"></i>
     </button>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-close" onclick="closeLightbox()">&times;</div>
+        <div class="lightbox-content" id="lightbox-content"></div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/faculty.js"></script>
 
-    <script src="script.js"></script>
+    <script src="js/gallery.js"></script>
+
 </body>
 
 </html>

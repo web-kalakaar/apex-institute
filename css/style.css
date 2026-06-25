@@ -1,0 +1,123 @@
+:root {
+  --primary-navy: #0a2463;
+  --primary-blue: #1e5aa8;
+  --accent-teal: #00d4aa;
+  --accent-cyan: #00b8d4;
+  --accent-gold: #ffd700;
+  --accent-coral: #ff6b6b;
+  --bg-light: #f8fafb;
+  --bg-white: #ffffff;
+  --text-primary: #1a1a2e;
+  --text-secondary: #4a4a68;
+  --text-light: #7a7a92;
+  --shadow-soft: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-medium: 0 12px 40px rgba(0, 0, 0, 0.12);
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.15);
+  --gradient-primary: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-blue) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--accent-teal) 0%, var(--accent-cyan) 100%);
+  --gradient-hero: linear-gradient(135deg, #0a2463 0%, #1e5aa8 50%, #00b8d4 100%);
+  --nav-height: 80px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-primary);
+  background: var(--bg-light);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+html,body{
+  overflow-x: hidden;
+}
+
+/* ============================================
+   SECTION COMMON STYLES
+============================================ */
+section {
+  padding: 30px clamp(20px, 5vw, 60px);
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(40px, 6vw, 70px);
+}
+
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; left: 50%;
+  transform: translateX(-50%);
+  width: 80px; height: 4px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  color: var(--text-secondary);
+  margin-top: 25px;
+  font-weight: 300;
+}
+
+
+
+/* ============================================
+   SCROLL TO TOP BUTTON
+============================================ */
+.scroll-top {
+  position: fixed;
+  bottom: 30px; right: 30px;
+  width: 50px; height: 50px;
+  background: var(--gradient-accent);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 5px 20px rgba(0,212,170,0.3);
+  z-index: 999;
+}
+
+.scroll-top.visible { opacity: 1; visibility: visible; }
+
+.scroll-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,212,170,0.5);
+}

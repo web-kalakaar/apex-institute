@@ -119,67 +119,6 @@ const checkCounterVisibility = function () {
 window.addEventListener("scroll", checkCounterVisibility);
 checkCounterVisibility();
 
-// ============================================
-// GALLERY TABS
-// ============================================
-const galleryTabs = document.querySelectorAll(".gallery-tab");
-const galleryItems = document.querySelectorAll(".gallery-item");
-
-galleryTabs.forEach((tab) => {
-  tab.addEventListener("click", function () {
-    const category = this.getAttribute("data-category");
-
-    galleryTabs.forEach((t) => t.classList.remove("active"));
-    this.classList.add("active");
-
-    galleryItems.forEach((item) => {
-      if (category === "all" || item.getAttribute("data-category") === category) {
-        item.style.display = "block";
-        setTimeout(() => {
-          item.style.opacity = "1";
-          item.style.transform = "scale(1)";
-        }, 10);
-      } else {
-        item.style.opacity = "0";
-        item.style.transform = "scale(0.8)";
-        setTimeout(() => {
-          item.style.display = "none";
-        }, 300);
-      }
-    });
-  });
-});
-
-// ============================================
-// LIGHTBOX
-// ============================================
-const lightbox = document.getElementById("lightbox");
-const lightboxContent = document.getElementById("lightbox-content");
-
-galleryItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    const icon = this.querySelector("i").cloneNode(true);
-    icon.style.fontSize = "8rem";
-    icon.style.color = "white";
-    icon.style.opacity = "0.6";
-
-    lightboxContent.innerHTML = "";
-    lightboxContent.appendChild(icon);
-    lightbox.classList.add("active");
-  });
-});
-
-function closeLightbox() {
-  lightbox.classList.remove("active");
-}
-
-lightbox.addEventListener("click", function (e) {
-  if (e.target === lightbox) closeLightbox();
-});
-
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") closeLightbox();
-});
 
 // ============================================
 // SCROLL TO TOP BUTTON

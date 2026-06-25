@@ -1,0 +1,100 @@
+
+/* ============================================
+   COURSES SECTION
+============================================ */
+.courses { background: white; }
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 3vw, 40px);
+}
+
+.course-card {
+  background: linear-gradient(135deg, var(--bg-light), white);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s;
+  border: 2px solid transparent;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-strong);
+  border-color: var(--accent-teal);
+}
+
+.course-header {
+  background: var(--gradient-primary);
+  padding: clamp(25px, 4vw, 40px) clamp(20px, 3vw, 35px);
+  color: white;
+}
+
+.course-header h3 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.course-header p {
+  font-size: clamp(0.85rem, 1.3vw, 1rem);
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.course-body { padding: clamp(20px, 3vw, 35px); }
+
+.course-features {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.course-features li {
+  padding: clamp(8px, 1.5vw, 12px) 0;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.course-features li:last-child { border-bottom: none; }
+
+.course-features i { color: var(--accent-teal); font-size: 1rem; }
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.course-duration {
+  color: var(--text-light);
+  font-size: clamp(0.8rem, 1.2vw, 0.9rem);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-enroll {
+  padding: clamp(10px, 1.5vw, 12px) clamp(20px, 3vw, 30px);
+  background: var(--gradient-accent);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: clamp(0.85rem, 1.3vw, 0.95rem);
+}
+
+.btn-enroll:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,212,170,0.3);
+}
